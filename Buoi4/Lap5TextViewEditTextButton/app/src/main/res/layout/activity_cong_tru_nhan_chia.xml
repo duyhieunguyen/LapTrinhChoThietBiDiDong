@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CongTruNhanChia">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="Cộng Trừ Nhân Chia"
+            android:layout_marginStart="-100dp"
+            android:textSize="25dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView_soA"
+            android:layout_column="0"
+            android:textSize="20dp"
+            android:text="Số a:"
+            />
+        <EditText
+            android:id="@+id/editText_soA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="-70dp"
+            android:hint="Nhập số a"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView_soB"
+            android:layout_column="0"
+            android:textSize="20dp"
+            android:text="Số b:"
+            />
+        <EditText
+            android:id="@+id/editText_soB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginStart="-70dp"
+            android:hint="Nhập số b"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_cong"
+            android:text="+"
+            android:textSize="25dp"
+
+            />
+        <Button
+            android:id="@+id/button_tru"
+            android:text="-"
+            android:textSize="25dp"
+
+            />
+        <Button
+            android:id="@+id/button_nhan"
+            android:text="*"
+            android:textSize="25dp"
+            android:layout_marginEnd="130dp"
+
+            />
+        <Button
+            android:id="@+id/button_chia"
+            android:text="/"
+            android:textSize="25dp"
+            android:layout_marginStart="-130dp"
+            />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/textView_ketqua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Kết quả"
+            />
+    </TableRow>
+
+</TableLayout>

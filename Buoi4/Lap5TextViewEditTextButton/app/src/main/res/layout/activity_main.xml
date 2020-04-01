@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="5dp"
+        android:fontFamily="tahoma"
+        android:textColor="@android:color/white"
+        android:text="Tên">
+
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_nhapten"
+        android:text="Lấy tên"
+        android:layout_below="@+id/textView1">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_nhapten"
+        android:ems="10"
+        android:inputType="text|textAutoCorrect|textCapWords"
+        android:hint="Nhập tên:"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/button_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:text="Lấy tên của EditText">
+
+    </Button>
+
+
+
+</RelativeLayout>
